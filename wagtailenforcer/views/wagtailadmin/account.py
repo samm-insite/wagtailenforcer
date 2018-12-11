@@ -12,10 +12,10 @@ from django.shortcuts import redirect, render
 
 from wagtail.utils.compat import user_is_authenticated
 from wagtailenforcer.forms import wagtailadmin
-from wagtail.wagtailadmin.utils import get_available_admin_languages
-from wagtail.wagtailcore.models import UserPagePermissionsProxy
+from wagtail.admin.utils import get_available_admin_languages
+from wagtail.core.models import UserPagePermissionsProxy
 
-from wagtail.wagtailusers.models import UserProfile
+from wagtail.users.models import UserProfile
 
 from password_policies.conf import settings
 from password_policies.forms import PasswordPoliciesChangeForm
