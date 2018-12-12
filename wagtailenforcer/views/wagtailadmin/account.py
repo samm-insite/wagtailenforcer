@@ -10,7 +10,7 @@ from django.contrib.auth.forms import PasswordChangeForm
 from django.http import Http404
 from django.shortcuts import redirect, render
 
-from wagtail.utils.compat import user_is_authenticated
+# from wagtail.utils.compat import user_is_authenticated ## deprecated
 from wagtailenforcer.forms import wagtailadmin
 from wagtail.admin.utils import get_available_admin_languages
 from wagtail.core.models import UserPagePermissionsProxy
