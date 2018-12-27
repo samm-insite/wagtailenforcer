@@ -19,11 +19,11 @@ except ImportError:
 PY3 = sys.version_info[0] == 3
 
 install_requires = [
-    'wagtail>=1.5',
-    'django>=1.8',
+    'wagtail>=2.2.2',
+    'django>=1.11.15',
     'django-password-policies-iplweb>=0.4.4b1',
-    'django-axes>=2.0.0,<3.0.0',
-    'pyClamd>=0.3.17',
+    'django-axes==4.4.3',
+    'pyClamd>=0.4.0',
 ]
 
 setup(
@@ -32,7 +32,7 @@ setup(
     description='WagtailEnforcer, the Wagtail arm of the law.',
     author='Springload',
     author_email='hello@springload.co.nz',
-    url='https://github.com/springload/wagtailenforcer/',
+    url='https://github.com/samm-insite/wagtailenforcer',
     packages=find_packages(),
     include_package_data=True,
     license='BSD',
